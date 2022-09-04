@@ -73,18 +73,6 @@ module.exports = {
 
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
-       },
-i18n: {
-    defaultLocale: 'zh-TW',     // 預設語系
-    locales: ['en', 'zh-TW'],   // 語系配置
-    localeConfigs: {
-      en: {
-        label: 'English',
-        direction: 'ltr',       // 閱讀方向為左到右
-      },
-      'zh-TW': {
-        label: '繁體中文（台灣）',
-        direction: 'ltr',
       },
     },
   },
