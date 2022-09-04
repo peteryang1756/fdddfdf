@@ -29,7 +29,7 @@ function Home() {
         </div>
       </header>
       <hr></hr>
-      <ExploreContent />
+      
       <hr></hr>
       <main>
      </main>
