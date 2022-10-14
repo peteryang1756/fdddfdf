@@ -6,6 +6,7 @@ import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
 
 //Components
+import ExploreContent from "../components/ExploreContent/ExploreContent";
 //import DiscoverYourPath from "../components/DiscoverYourPath/DiscoverYourPath";
 import SearchHeader from "../components/SearchHeader/SearchHeader";
 
@@ -28,7 +29,7 @@ function Home() {
         </div>
       </header>
       <hr></hr>
-      
+      <ExploreContent />
       <hr></hr>
       <main>
      </main>
