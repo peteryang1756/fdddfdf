@@ -9,6 +9,11 @@ module.exports = {
     "https://uploads-ssl.webflow.com/62f0c37a3d1cea75603016a9/62f3230be726d3169ad48765_62ccdcf4ce0fa3341567b2e5_%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A8%AD%E8%A8%88%20(1)%20(1).jpg",
   organizationName: "ssangyongsports", // Usually your GitHub org/user name.
   projectName: "support-1", // Usually your repo name.
+  i18n: {
+    defaultLocale: 'zh-tw',
+    locales: ['zh-tw'],
+  },
+
   themeConfig: {
     navbar: {
       // title: '雙龍體育',
