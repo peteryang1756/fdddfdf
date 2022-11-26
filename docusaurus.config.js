@@ -23,6 +23,7 @@ module.exports = {
           "https://uploads-ssl.webflow.com/62ccd191dc4db47eff558608/62ccd1d28b3c0f4a9a2a262c_logo2.png",
         srcDark:
           "https://uploads-ssl.webflow.com/62ccd191dc4db47eff558608/62ccd1d28b3c0f4a9a2a262c_logo2.png",
+          style: {backgroundColor: 'transparent'},
       },
       items: [
         {
