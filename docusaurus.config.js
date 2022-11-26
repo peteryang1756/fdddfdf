@@ -67,6 +67,9 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} 雙龍體育`,
     },
   },
+  async function createConfig() {
+  const FeatureRequestsPlugin = (
+    await import('./src/plugins/featureRequests/FeatureRequestsPlugin.mjs')
   presets: [
     [
       "@docusaurus/preset-classic",
