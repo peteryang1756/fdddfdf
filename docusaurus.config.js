@@ -13,6 +13,14 @@ module.exports = {
     defaultLocale: 'zh-tw',
     locales: ['zh-tw'],
   },
+    plugins: ["@chatwoot/docusaurus-plugin"],
+  themeConfig: {
+    chatwoot: {
+      websiteToken: "Your website inbox token",
+      baseURL: "https://app.chatwoot.com",  // optional
+      enableInDevelopment: false,  // optional
+    }
+  }, 
 
   themeConfig: {
     navbar: {
