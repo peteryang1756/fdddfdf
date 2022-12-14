@@ -4,7 +4,7 @@ import Layout from "@theme/Layout";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import useBaseUrl from "@docusaurus/useBaseUrl";
 import styles from "./styles.module.css";
-
+import ChatwootWidget from '../components/ChatwootWidget'
 //Components
 import ExploreContent from "../components/ExploreContent/ExploreContent";
 //import DiscoverYourPath from "../components/DiscoverYourPath/DiscoverYourPath";
@@ -30,6 +30,7 @@ function Home() {
       </header>
       <hr></hr>
       <ExploreContent />
+<ChatwootWidget />
       <hr></hr>
       <main>
      </main>
