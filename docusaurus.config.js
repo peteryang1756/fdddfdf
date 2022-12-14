@@ -85,6 +85,11 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
           plugins: ["@chatwoot/docusaurus-plugin"],
+          themeConfig: {
+    chatwoot: {
+      websiteToken: "Your website inbox token",
+      baseURL: "https://app.chatwoot.com",  // optional
+      enableInDevelopment: false,
         },
       },
     ],
