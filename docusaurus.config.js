@@ -44,6 +44,12 @@ module.exports = {
 
       //... other Algolia params
     },
+       chatwoot: {
+      websiteToken: "Your website inbox token",
+      baseURL: "https://app.chatwoot.com",  // optional
+      enableInDevelopment: false,  // optional
+
+ },
     footer: {
       links: [
         {
@@ -70,6 +76,7 @@ module.exports = {
   presets: [
     [
       "@docusaurus/preset-classic",
+       plugins: ["@chatwoot/docusaurus-plugin"],
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
