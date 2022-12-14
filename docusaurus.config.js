@@ -45,7 +45,7 @@ module.exports = {
       //... other Algolia params
     },
        chatwoot: {
-      websiteToken: "Your website inbox token",
+      websiteToken: "GmfmZ9BcVVDgkKWTpjg1fYnS",
       baseURL: "https://app.chatwoot.com",  // optional
       enableInDevelopment: false,  // optional
 
