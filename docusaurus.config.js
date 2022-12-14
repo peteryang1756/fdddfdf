@@ -85,6 +85,6 @@ module.exports = {
       websiteToken: "GmfmZ9BcVVDgkKWTpjg1fYnS",
       baseURL: "https://app.chatwoot.com",  // optional
       enableInDevelopment: false,
-        },
-      },
+    }
+  }
 };
