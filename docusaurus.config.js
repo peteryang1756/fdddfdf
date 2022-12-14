@@ -1,3 +1,4 @@
+
 module.exports = {
   title: "雙龍體育支援中心",
   tagline: "雙龍體育支援中心",
@@ -44,7 +45,12 @@ module.exports = {
 
       //... other Algolia params
     },
-   
+       chatwoot: {
+      websiteToken: "GmfmZ9BcVVDgkKWTpjg1fYnS",
+      baseURL: "https://app.chatwoot.com",  // optional
+      enableInDevelopment: false,  // optional
+
+ },
     footer: {
       links: [
         {
@@ -80,11 +86,8 @@ module.exports = {
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
           plugins: ["@chatwoot/docusaurus-plugin"],
-          themeConfig: {
-    chatwoot: {
-      websiteToken: "GmfmZ9BcVVDgkKWTpjg1fYnS",
-      baseURL: "https://app.chatwoot.com",  // optional
-      enableInDevelopment: false,
-    }
-  }
+        },
+      },
+    ],
+  ],
 };
