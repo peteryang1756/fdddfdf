@@ -76,7 +76,6 @@ module.exports = {
   presets: [
     [
       "@docusaurus/preset-classic",
-       plugins: ["@chatwoot/docusaurus-plugin"],
       {
         docs: {
           sidebarPath: require.resolve("./sidebars.js"),
@@ -85,6 +84,7 @@ module.exports = {
 
         theme: {
           customCss: require.resolve("./src/css/custom.css"),
+          plugins: ["@chatwoot/docusaurus-plugin"],
         },
       },
     ],
