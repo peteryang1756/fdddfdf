@@ -7,13 +7,17 @@ module.exports = {
   onBrokenMarkdownLinks: "ignore",
   favicon:
     "https://uploads-ssl.webflow.com/62f0c37a3d1cea75603016a9/62f3230be726d3169ad48765_62ccdcf4ce0fa3341567b2e5_%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A8%AD%E8%A8%88%20(1)%20(1).jpg",
-  organizationName: "ssangyongsports", // Usually your GitHub org/user name.
-  projectName: "support-1", // Usually your repo name.
-  i18n: {
+  organizationName: 'ssangyongsports', // Usually your GitHub org/user name.
+  projectName: 'github-k8klqk', // Usually your repo name.
+
+  // Even if you don't use internalization, you can use this field to set useful
+  // metadata like html lang. For example, if your site is Chinese, you may want
+  // to replace "en" with "zh-Hans".
+   i18n: {
     defaultLocale: 'zh-tw',
     locales: ['zh-tw'],
   },
-
+ 
 
   themeConfig: {
     navbar: {
