@@ -68,14 +68,7 @@ module.exports = {
       copyright: `Copyright © ${new Date().getFullYear()} 雙龍體育`,
     },
   },
-  plugins: ["@chatwoot/docusaurus-plugin"],
-  themeConfig: {
-    chatwoot: {
-      websiteToken: "Your website inbox token",
-      baseURL: "https://app.chatwoot.com",  // optional
-      enableInDevelopment: false,  // optional
-    }
-  }, 
+ 
   presets: [
     [
       "@docusaurus/preset-classic",
