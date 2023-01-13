@@ -1,140 +1,42 @@
-// @ts-check
-// Note: type annotations allow type checking and IDEs autocompletion
-
-const lightCodeTheme = require('prism-react-renderer/themes/github');
-
-/** @type {import('@docusaurus/types').Config} */
-const config = {
-  title: '雙龍體育',
-  tagline: '​雙龍職籃 ... 籃球，為一種由兩隊參與，在一個長方形籃球場進行的球類運動。每隊出場5名隊員，可將球向任何方向傳、投、拍、滾或運，目的是將籃球投入對方球籃得分，並阻止',
-  url: 'https://www.ssangyongsports.eu.org/',
-  baseUrl: '/',
-  onBrokenLinks: 'throw',
-  onBrokenMarkdownLinks: 'warn',
-  favicon: 'https://uploads-ssl.webflow.com/634b88e48246d83808264be5/634b8a960007a1ac7d21f4e2_62f32325349867818a2a6fa2_62ccdcf75b92a3e26f4df0b7_%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A8%AD%E8%A8%88%20(1).jpg',
-
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'ssangyongsports', // Usually your GitHub org/user name.
-  projectName: 'github-k8klqk', // Usually your repo name.
-
-  // Even if you don't use internalization, you can use this field to set useful
-  // metadata like html lang. For example, if your site is Chinese, you may want
-  // to replace "en" with "zh-Hans".
-   i18n: {
+module.exports = {
+  title: "雙龍體育支援中心",
+  tagline: "雙龍體育支援中心",
+  url: "https://help.ssangyongsports.eu.org/",
+  baseUrl: "/",
+  onBrokenLinks: "ignore",
+  onBrokenMarkdownLinks: "ignore",
+  favicon:
+    "https://uploads-ssl.webflow.com/62f0c37a3d1cea75603016a9/62f3230be726d3169ad48765_62ccdcf4ce0fa3341567b2e5_%E6%9C%AA%E5%91%BD%E5%90%8D%E8%A8%AD%E8%A8%88%20(1)%20(1).jpg",
+  organizationName: "ssangyongsports", // Usually your GitHub org/user name.
+  projectName: "support-1", // Usually your repo name.
+  i18n: {
     defaultLocale: 'zh-tw',
     locales: ['zh-tw'],
   },
- 
-  presets: [
-    [
-      'classic',
-      /** @type {import('@docusaurus/preset-classic').Options} */
-      ({
-        docs: {
-          sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.
-        },
-        blog: {
-          showReadingTime: true,
 
-          // Please change this to your repo.
-          // Remove this to remove the "edit this page" links.         
-        },
-        theme: {
-          customCss: require.resolve('./src/css/custom.css'),
-                },
-      }),
-    ],
-  ],
-  themeConfig:
-    /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
-    ({
-      navbar: {
-        hideOnScroll: true,
-        
-        logo: {
-          alt: '雙龍體育 Logo',
-          src: 'https://img.ssangyongsports.eu.org/logo2.png',
-        className: 'custom-navbar-logo-class',
-             },
-        items: [
-           {
-          label: "體育",
-          position: "left",
-          items: [
-            {
-              label: "雙龍職棒",
-            href: 'https://slbtw.cf/',
-            },
-            {
-            label: '雙龍職籃',
-            href: 'https://sbatw.ml/',
-            },
-          ],
-        },
-      {
-          label: "支援",
-          position: "left",
-          items: [
-            {
-              label: "幫助中心",
-            href: 'https://help.ssangyongsports.eu.org/',
-            },
-            {
-            label: '社區',
-            href: 'https://DISCUSS.ssangyongsports.eu.org/',
-            },
-            {
-              label: "聯繫",
-              to: "/c",
-            },
-          ],
-        },
-         {
-          label: "組織",
-          position: "left",
-          items: [
-            {
-              label: "Blog",
-              to: "/blog/",
-              activeBaseRegex: "/blog/?$",
-            },
-            {
-            label: '狀態',
-            href: 'https://status.ssangyongsports.eu.org/',
-            },
-          ],
-        },
-          {
-          label: "條款",
-          position: "left",
-          items: [
-            {
-              label: "隱私政策",
-              to: "/p",
-            },
-            {
-             label: "服務條款",
-              to: "/t",
-            },
-          ],
-        },
-        ],
+
+  themeConfig: {
+    navbar: {
+      // title: '雙龍體育',
+      logo: {
+        alt: "雙龍體育",
+        src:
+          "https://uploads-ssl.webflow.com/62ccd191dc4db47eff558608/62ccd1d28b3c0f4a9a2a262c_logo2.png",
+        srcDark:
+          "https://uploads-ssl.webflow.com/62ccd191dc4db47eff558608/62ccd1d28b3c0f4a9a2a262c_logo2.png",
       },
-              announcementBar: {
-      id: 'announcementBar-2',
-      content:
-        '新年快樂2023',
-      backgroundColor: '#84C1FF',
-      textColor: '#091E42',
-      isCloseable: false,
+      items: [
+        {
+          href: "https://www.ssangyongsports.eu.org/",
+          label: "回官網",
+          position: "right",
+        },
+      ],
     },
-          algolia: {
-      apiKey: "7640fd8ca3b8204bd58b654f71607ab5",
+    algolia: {
+      apiKey: "f3d2cff14e6378c5fe13fc65e074a7a4",
       indexName: "docs",
-      appId: "8YELX4XDEG",
+      appId: "HZOP3IN8L1",
       // Optional: see doc section bellow
       contextualSearch: true,
 
@@ -143,78 +45,50 @@ const config = {
 
       //... other Algolia params
     },
-  
-  
-      footer: {
-        style: 'dark',
-        logo: {
-        alt: '雙龍體育',
-        src: 'https://img.ssangyongsports.eu.org/logo2.png',
-        href: '/',
-        width: 160,
-        height: 51,
-      },
-        links: [
-          {
-          title: '體育',
-            items: [
-              {
-                  label: '雙龍職棒',
-                  href: 'https://slbtw.cf',
-              },
-              {
-                label: '雙龍職籃',
-                href: 'https://sbatw.ml',
-              },
-              {
-                label: '雙龍足球',
-                href: '/',
-              },
-            ],
-          },
-          {
-           title: '組織',
-            items: [
-              {
-                label: 'blog',
-                href: '/blog',
-              },
-              {
-                label: '狀態',
-                href: 'https://status.ssangyongsports.eu.org/',
-              },              
-            ],
-          },
-          {
-            title: '幫助',
-            items: [
-              {
-                label: '幫助',
-                href: 'https://help.ssangyongsports.eu.org/',
-              },
-              {
-                label: '社區',
-                href: 'https://discuss.ssangyongsports.eu.org/',
-              },
-              {
-                label: '聯繫',
-                href: '/c',
-              },
-            ],
-          },
-        ],
-        copyright: `Copyright © ${new Date().getFullYear()} 雙龍體育, org. 維護團隊：雙龍體育.`,
-      },
-       prism: {
-        theme: lightCodeTheme,
-        darkTheme: lightCodeTheme
-      },
-      colorMode: {
-        defaultMode: 'light',
-        disableSwitch: true,
-        respectPrefersColorScheme: false
-      },
-    }),
-};
+    footer: {
+      links: [
+        {
+          title: "與我們聯繫",
+          items: [
+            {
+              label: "Email Us",
+              href: "mailto:support@ssport.eu.org",
+            },
+            {
+              label: "Twitter",
+              href: "https://twitter.com/hashnode",
+            },
+            {
+              label: "Discord",
+              href: "https://discord.gg/qsAQfxX",
+            },
+          ],
+        },
+      ],
+      copyright: `Copyright © ${new Date().getFullYear()} 雙龍體育`,
+    },
+  },
+  plugins: ["@chatwoot/docusaurus-plugin"],
+  themeConfig: {
+    chatwoot: {
+      websiteToken: "Your website inbox token",
+      baseURL: "https://app.chatwoot.com",  // optional
+      enableInDevelopment: false,  // optional
+    }
+  }, 
+  presets: [
+    [
+      "@docusaurus/preset-classic",
+      {
+        docs: {
+          sidebarPath: require.resolve("./sidebars.js"),
+          editUrl: "https://github.com/ssangyongsports//edit/main",
+        },
 
-module.exports = config;
+        theme: {
+          customCss: require.resolve("./src/css/custom.css"),
+        },
+      },
+    ],
+  ],
+};
